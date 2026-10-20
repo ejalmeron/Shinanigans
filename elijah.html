@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elijah Almeron | Shinanigans</title>
+  <meta name="description" content="Portfolio of Elijah Almeron, graphic artist and member of Shinanigans.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark'; }
+    catch (e) { document.documentElement.dataset.theme = 'dark'; }
+  </script>
+  <link rel="stylesheet" href="member.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="ico-ps" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" rx="4.5" fill="#001E36" stroke="#31A8FF" stroke-width="1.5"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11.5" fill="#31A8FF">Ps</text></symbol>
+    <symbol id="ico-ai" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" rx="4.5" fill="#330000" stroke="#FF9A00" stroke-width="1.5"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11.5" fill="#FF9A00">Ai</text></symbol>
+    <symbol id="ico-id" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" rx="4.5" fill="#49021F" stroke="#FF3366" stroke-width="1.5"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11.5" fill="#FF3366">Id</text></symbol>
+    <symbol id="ico-lr" viewBox="0 0 24 24"><rect x=".75" y=".75" width="22.5" height="22.5" rx="4.5" fill="#001E36" stroke="#4DB2FF" stroke-width="1.5"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="11.5" fill="#4DB2FF">Lr</text></symbol>
+    <symbol id="ico-fg" viewBox="0 0 38 57">
+      <path d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z" fill="#1ABCFE"/>
+      <path d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z" fill="#0ACF83"/>
+      <path d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z" fill="#FF7262"/>
+      <path d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z" fill="#F24E1E"/>
+      <path d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z" fill="#A259FF"/>
+    </symbol>
+    <symbol id="ico-cv" viewBox="0 0 24 24">
+      <defs><linearGradient id="cvg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#00C4CC"/><stop offset="1" stop-color="#7D2AE8"/></linearGradient></defs>
+      <circle cx="12" cy="12" r="12" fill="url(#cvg)"/>
+      <text x="12" y="16.8" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-weight="700" font-size="14" fill="#fff">C</text>
+    </symbol>
+  </defs>
+</svg>
+
+
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">Shinanigans<span>.</span></a>
+    <input type="checkbox" id="menu-toggle" class="nav__check">
+    <label for="menu-toggle" class="nav__burger" aria-label="Toggle menu"><i></i><i></i><i></i></label>
+    <nav class="nav__links">
+      <a href="index.html">&larr; Group</a>
+      <a href="#experience">Experience</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills" class="nav__cta">Skills</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- ========== WORD CAROUSEL ========== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__group">
+        <span>Graphic Design</span><span>Branding</span><span>Posters</span><span>Layout</span><span>Illustration</span>
+      </div>
+      <div class="ticker__group">
+        <span>Graphic Design</span><span>Branding</span><span>Posters</span><span>Layout</span><span>Illustration</span>
+      </div>
+    </div>
+
+    <div class="page">
+
+      <!-- ========== PROFILE ========== -->
+      <section class="profile" id="home">
+        <div class="profile__top">
+          <div class="avatar">
+            <img src="images/elijah.jpg" alt="Elijah Almeron">
+            <img class="avatar__alt" src="almeron.jpg" alt="" onerror="this.remove()">
+          </div>
+          <div>
+            <h1 class="profile__name">Elijah Almeron<svg class="verified" viewBox="0 0 24 24" aria-hidden="true"><g fill="#4A9BEF"><rect x="4" y="4" width="16" height="16" rx="4"/><rect x="4" y="4" width="16" height="16" rx="4" transform="rotate(30 12 12)"/><rect x="4" y="4" width="16" height="16" rx="4" transform="rotate(60 12 12)"/></g><path d="M7.8 12.3l3 3 5.4-6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></h1>
+            <div class="profile__icons">
+              <a href="https://github.com/ejalmeron" class="social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+              <a href="https://www.facebook.com/ej.almeron.3" class="social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=almeronelijah@gmail.com"
+   class="social"
+   aria-label="Email"
+   target="_blank"
+   rel="noopener noreferrer">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+  </svg>
+</a>
+
+            </div>
+          </div>
+        </div>
+        <h2 class="profile__role" aria-label="Graphic Artist, Branding and Posters">
+  <span id="typed" aria-hidden="true">Graphic Artist</span><span class="caret" aria-hidden="true"></span>
+</h2>
+        <p class="profile__desc">
+          I turn ideas into clear, bold visuals, from logos and posters to full brand kits.
+          I'm one fourth of <a href="index.html">Shinanigans</a>.
+        </p>    
+        <a href="Almeron_Resume.pdf" id="resume-open" class="btn btn--primary">View Resume &rarr;</a>
+      </section>
+
+      <!-- ========== EXPERIENCE ========== -->
+      <section class="section" id="experience">
+        <h2 class="section__title">Experience</h2>
+        <div class="xp">
+          <div class="xp__row">
+            <time class="xp__date">2026 - Present</time>
+            <div><h3 class="xp__role">Graphic Artist</h3><p class="xp__org">Dunamise,Sublimation</p><p class="xp__place">San Quintin, Pangasinan</p></div>
+          </div>
+          <div class="xp__row">
+            <time class="xp__date">2024-2025</time>
+            <div><h3 class="xp__role">Layout Artist</h3><p class="xp__org">Coach sid, DTF and tarpaulin</p><p class="xp__place">Tayug, Pangasinan</p></div>
+          </div>
+          <div class="xp__row">
+            <time class="xp__date">2024</time>
+            <div><h3 class="xp__role">Freelance Editor</h3><p class="xp__org">Self-employed</p><p class="xp__place">Work From home</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LIFE HIGHLIGHTS -->
+<section class="section" id="highlights">
+  <h2 class="section__title">Life Highlights</h2>
+
+  <div class="featured">
+
+    <a href="#projects" class="featured__item featured__item--1">
+      <img src="images/highlight1.jpg" alt="Layout Design">
+      <div>
+        <strong>Work</strong>
+        <small>Photoshop</small>
+      </div>
+    </a>
+
+    <a href="#projects" class="featured__item featured__item--2">
+      <img src="images/highlight2.jpg" alt="Graphic design workshop">
+      <div>
+        <strong>Graphic Posting</strong>
+        <small>OJT Workshop</small>
+      </div>
+    </a>
+
+    <a href="#projects" class="featured__item featured__item--3">
+      <img src="images/highlight3.jpg" alt="Awards and achievements">
+      <div>
+        <strong>Awards</strong>
+        <small>Achievement</small>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+      <!-- ========== PROJECTS ========== -->
+      <section class="section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects">
+          <a href="#" class="project">
+            <div class="project__img project__img--1"><img src="images/work1.jpg" alt="Poster series"></div>
+            <div class="project__body">
+              <ul class="tags"><li>Poster</li><li>Photoshop</li></ul>
+              <h3>Poster/Photoshop</h3>
+              <p>Designed eye-catching event posters using Photoshop, focusing on bold typography,
+                 vibrant colors, and clean layouts to promote events and attract attention.</p>
+              <span class="project__more">Visit Site</span>
+            </div>
+          </a>
+          <a href="#" class="project">
+            <div class="project__img project__img--2"><img src="images/work2.jpg" alt="Poster series"></div> 
+            <div class="project__body">
+              <ul class="tags"><li>Logo</li><li>Illustrator</li></ul>
+              <h3>Logo/Illustrator</h3>
+              <p>Created simple and memorable logo designs using Adobe Illustrator, combining geometric
+                 shapes and creative concepts to build unique brand identities.</p>
+              <span class="project__more">Visit Site</span>
+            </div>
+          </a>
+          <a href="#" class="project">
+            <div class="project__img project__img--3"><img src="images/work3.jpg" alt="Poster series"></div>
+            <div class="project__body">
+              <ul class="tags"><li>Social Media</li>
+              <h3>Social Media/Canva</h3>
+              <p>Designed engaging social media graphics using Canva, including promotional posts, discount
+                 announcements, and event advertisements to help brands connect with their audience.</p>
+              <span class="project__more">Visit Site</span>
+            </div>
+          </a>
+        </div>
+        <div class="center"><a href="#" class="btn btn--ghost">Explore More Projects &rarr;</a></div>
+      </section>
+
+      
+      <section class="section" id="certificates">
+  <h2 class="section__title">Certificates</h2>
+  <div class="certs">
+    <a href="images/elijah-cert1.jpg" class="cert" target="_blank" rel="noopener noreferrer">
+      <div class="cert__img"><img src="images/elijah-cert1.jpg" alt="Certificate: Graphic Design Fundamentals" loading="lazy"></div>
+      <div><strong>Graphic Design Fundamentals</strong><small>CreativeHub Academy · 2024</small></div>
+    </a>
+    <a href="images/elijah-cert2.jpg" class="cert" target="_blank" rel="noopener noreferrer">
+      <div class="cert__img"><img src="images/elijah-cert2.jpg" alt="Certificate: Adobe Photoshop Mastery" loading="lazy"></div>
+      <div><strong>Adobe Photoshop Mastery</strong><small>Pixel School PH · 2025</small></div>
+    </a>
+    <a href="images/elijah-cert3.jpg" class="cert" target="_blank" rel="noopener noreferrer">
+      <div class="cert__img"><img src="images/elijah-cert3.jpg" alt="Certificate: Branding and Identity Design" loading="lazy"></div>
+      <div><strong>Branding and Identity Design</strong><small>DesignLab Philippines · 2026</small></div>
+    </a>
+  </div>
+</section>
+
+
+      <!-- ========== SKILLS ========== -->
+<section class="section" id="skills">
+  <h2 class="section__title">Skills</h2>
+
+  <div class="chips chips--logos" aria-hidden="true">
+    <div class="chips__group">
+      <span><svg class="ico"><use href="#ico-ps"/></svg>Photoshop</span>
+      <span><svg class="ico"><use href="#ico-ai"/></svg>Illustrator</span>
+      <span><svg class="ico"><use href="#ico-fg"/></svg>Figma</span>
+      <span><svg class="ico"><use href="#ico-cv"/></svg>Canva</span>
+      <span><svg class="ico"><use href="#ico-id"/></svg>InDesign</span>
+      <span><svg class="ico"><use href="#ico-lr"/></svg>Lightroom</span>
+    </div>
+    <div class="chips__group">
+      <span><svg class="ico"><use href="#ico-ps"/></svg>Photoshop</span>
+      <span><svg class="ico"><use href="#ico-ai"/></svg>Illustrator</span>
+      <span><svg class="ico"><use href="#ico-fg"/></svg>Figma</span>
+      <span><svg class="ico"><use href="#ico-cv"/></svg>Canva</span>
+      <span><svg class="ico"><use href="#ico-id"/></svg>InDesign</span>
+      <span><svg class="ico"><use href="#ico-lr"/></svg>Lightroom</span>
+    </div>
+  </div>
+
+  <div class="chips chips--reverse" aria-hidden="true">
+    <div class="chips__group"><span>Logo Design</span><span>Posters</span><span>Branding</span><span>Social Media</span><span>Layout</span><span>Typography</span></div>
+    <div class="chips__group"><span>Logo Design</span><span>Posters</span><span>Branding</span><span>Social Media</span><span>Layout</span><span>Typography</span></div>
+  </div>
+
+  <div class="chips" aria-hidden="true">
+    <div class="chips__group"><span>Color Theory</span><span>Illustration</span><span>Photo Editing</span><span>Mockups</span><span>Print Design</span><span>Teamwork</span></div>
+    <div class="chips__group"><span>Color Theory</span><span>Illustration</span><span>Photo Editing</span><span>Mockups</span><span>Print Design</span><span>Teamwork</span></div>
+  </div>
+
+  <ul class="sr-only"><li>Photoshop, Illustrator, Figma, Canva, InDesign, Lightroom</li><li>Logo design, posters, branding, social media, layout, typography</li><li>Color theory, illustration, photo editing, mockups, print design, teamwork</li></ul>
+</section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Elijah Almeron. Part of <a href="index.html">Shinanigans</a>.</p>
+    <div class="footer__links"><a href="#">Behance</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+  </footer>
+
+  <dialog class="resume" id="resume-modal" aria-label="Resume">
+  <div class="resume__bar">
+    <strong>Resume</strong>
+    <div class="resume__actions">
+      <a href="elijah-cv.pdf" target="_blank" rel="noopener" class="btn btn--primary">Open PDF &nearr;</a>
+      <button type="button" class="resume__close" aria-label="Close resume">&times;</button>
+    </div>
+  </div>
+  <div class="resume__body">
+    <img src="images/elijah-resume.jpg" alt="Resume of Elijah Almeron">
+  </div>
+</dialog>
+
+  <script>
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const updateLabel = () => toggle.setAttribute('aria-label',
+    root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  updateLabel();
+
+  toggle.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    const apply = () => {
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      updateLabel();
+    };
+
+    // no animation support or reduced motion: just switch
+    if (!document.startViewTransition || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      apply();
+      return;
+    }
+
+    const slash = document.createElement('div');
+    slash.className = 'sword-slash';
+    document.body.appendChild(slash);
+
+    const transition = document.startViewTransition(apply);
+    transition.ready.then(() => {
+      const opts = { duration: 650, easing: 'cubic-bezier(.7,0,.2,1)' };
+
+      // the new theme is revealed behind a slanted edge
+      root.animate({
+        clipPath: [
+          'polygon(0 0, 0 0, -30% 100%, 0 100%)',
+          'polygon(0 0, 160% 0, 130% 100%, 0 100%)'
+        ]
+      }, { ...opts, pseudoElement: '::view-transition-new(root)' });
+
+      // the blade: a thin band riding that same edge
+      slash.animate({
+        clipPath: [
+          'polygon(0% 0, 0.8% 0, -29.2% 100%, -30% 100%)',
+          'polygon(160% 0, 160.8% 0, 130.8% 100%, 130% 100%)'
+        ]
+      }, opts);
+    });
+    transition.finished.then(() => slash.remove());
+  });
+</script>
+
+
+  <script>
+    // pixel-block reveal on the profile photo (plays when it scrolls into view; hover swaps to a second photo)
+    (function () {
+      const avatar = document.querySelector('.avatar');
+      if (!avatar || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const N = 10;                                   // grid size: 10 x 10 blocks
+      const grid = document.createElement('div');
+      grid.className = 'avatar__px';
+      grid.style.setProperty('--n', N);
+      for (let i = 0; i < N * N; i++) {
+        const cell = document.createElement('i');
+        if (Math.random() < 0.35) cell.className = 'dark';   // mix of white and black blocks
+        grid.appendChild(cell);
+      }
+      avatar.appendChild(grid);
+
+      const cells = Array.from(grid.children);
+      let timers = [];
+      function play() {
+        timers.forEach(clearTimeout);
+        timers = [];
+        grid.classList.add('instant');                // cover the photo again, no animation
+        cells.forEach(c => c.classList.remove('off'));
+        void grid.offsetWidth;
+        grid.classList.remove('instant');
+        cells.forEach(c => timers.push(setTimeout(() => c.classList.add('off'), 200 + Math.random() * 1000)));
+      }
+
+      new IntersectionObserver((entries, io) => {
+        if (entries[0].isIntersecting) { play(); io.disconnect(); }
+      }, { threshold: 0.4 }).observe(avatar);
+      // hover: blocks cover the photo, the picture swaps, then the blocks dissolve
+      function swap(showAlt) {
+        timers.forEach(clearTimeout);
+        timers = [];
+        cells.forEach(c => timers.push(setTimeout(() => c.classList.remove('off'), Math.random() * 350)));
+        timers.push(setTimeout(() => avatar.classList.toggle('alt', showAlt), 420));
+        cells.forEach(c => timers.push(setTimeout(() => c.classList.add('off'), 480 + Math.random() * 500)));
+      }
+      avatar.addEventListener('mouseenter', () => swap(true));
+      avatar.addEventListener('mouseleave', () => swap(false));
+    })();
+  </script>
+  <script>
+  // typing effect (safe: can never run twice, no jumping)
+  (function () {
+    const el = document.getElementById('typed');
+    if (!el || el.dataset.running) return;
+    el.dataset.running = '1';
+
+    const phrases = ['Graphic Artist', 'Layout Artist', 'Branding & Posters', 'Logo Designer'];
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = phrases[0]; return; }
+
+    const TYPE = 90, DELETE = 45, HOLD = 1400, GAP = 350;
+    let p = 0, i = 0, deleting = false;
+
+    (function tick() {
+      const text = phrases[p];
+      i += deleting ? -1 : 1;
+      el.textContent = text.slice(0, i);
+
+      let delay = deleting ? DELETE : TYPE;
+      if (!deleting && i === text.length) { deleting = true; delay = HOLD; }
+      else if (deleting && i === 0) { deleting = false; p = (p + 1) % phrases.length; delay = GAP; }
+      setTimeout(tick, delay);
+    })();
+  })();
+</script>
+
+
+<script>
+  // resume popup: shows the resume picture, with a button that opens the PDF in a new tab
+  (function () {
+    const modal = document.getElementById('resume-modal');
+    const openBtn = document.getElementById('resume-open');
+    if (!modal || !openBtn) return;
+
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.showModal();
+      document.body.style.overflow = 'hidden';
+    });
+
+    modal.querySelector('.resume__close').addEventListener('click', () => modal.close());
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });
+    modal.addEventListener('close', () => { document.body.style.overflow = ''; });
+  })();
+</script>
+
+</body>
+</html>

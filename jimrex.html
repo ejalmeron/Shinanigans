@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jimrex Maqueda | Shinanigans</title>
+  <meta name="description" content="Portfolio of Jimrex Maqueda, cyber security and member of Shinanigans.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark'; }
+    catch (e) { document.documentElement.dataset.theme = 'dark'; }
+  </script>
+  <link rel="stylesheet" href="member.css">
+  <style>@view-transition { navigation: auto; }</style>
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="nav">
+    <a href="index.html" class="nav__logo">Shinanigans<span>.</span></a>
+    <input type="checkbox" id="menu-toggle" class="nav__check">
+    <label for="menu-toggle" class="nav__burger" aria-label="Toggle menu"><i></i><i></i><i></i></label>
+    <nav class="nav__links">
+      <a href="index.html">&larr; Group</a>
+      <a href="#experience">Experience</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills" class="nav__cta">Skills</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- ========== WORD CAROUSEL ========== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__group">
+        <span>Security</span><span>Privacy</span><span>Networks</span><span>Defense</span><span>Risk</span>
+      </div>
+      <div class="ticker__group">
+        <span>Security</span><span>Privacy</span><span>Networks</span><span>Defense</span><span>Risk</span>
+      </div>
+    </div>
+
+    <div class="page">
+
+      <!-- ========== PROFILE ========== -->
+      <section class="profile" id="home">
+        <div class="profile__top">
+          <div class="avatar">
+            <img src="images/member4.jpg" alt="Jimrex Maqueda">
+            <img class="avatar__alt" src="images/member4-2.jpg" alt="" onerror="this.remove()">
+          </div>
+          <div>
+            <h1 class="profile__name">Jimrex Maqueda<svg class="verified" viewBox="0 0 24 24" aria-hidden="true"><g fill="#4A9BEF"><rect x="4" y="4" width="16" height="16" rx="4"/><rect x="4" y="4" width="16" height="16" rx="4" transform="rotate(30 12 12)"/><rect x="4" y="4" width="16" height="16" rx="4" transform="rotate(60 12 12)"/></g><path d="M7.8 12.3l3 3 5.4-6" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></h1>
+            <div class="profile__icons">
+              <a href="https://github.com/yown-jimrex" class="social" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              </a>
+              <a href="https://www.facebook.com/jimrex.maqueda" class="social" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </a>
+              
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=jimrexmaqueda@gmail.com"
+   class="social"
+   aria-label="Email"
+   target="_blank"
+   rel="noopener noreferrer">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round" aria-hidden="true">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+    <polyline points="22,6 12,13 2,6"/>
+  </svg>
+</a>
+
+            </div>
+          </div>
+        </div>
+        <h2 class="profile__role" aria-label="Cyber Security, Protecting Digital Systems">
+          <span id="typed" aria-hidden="true">Cyber Security</span><span class="caret" aria-hidden="true"></span>
+        </h2>
+        <p class="profile__desc">
+          I protect digital systems and data by spotting threats early and reducing risk.
+          I'm one fourth of <a href="index.html">Shinanigans</a>.
+        </p>
+        <a href="jimrex-cv.pdf" id="resume-open" class="btn btn--primary">View Resume &rarr;</a>
+      </section>
+
+      <!-- ========== EXPERIENCE ========== -->
+      <section class="section" id="experience">
+        <h2 class="section__title">Experience</h2>
+        <div class="xp">
+          <div class="xp__row">
+            <time class="xp__date">2026 - Present</time>
+            <div><h3 class="xp__role">Cyber Security</h3><p class="xp__org">Shinanigans</p><p class="xp__place">Your City, Province</p></div>
+          </div>
+          <div class="xp__row">
+            <time class="xp__date">2025</time>
+            <div><h3 class="xp__role">Security Trainee</h3><p class="xp__org">Your Organization</p><p class="xp__place">Your City, Province</p></div>
+          </div>
+          <div class="xp__row">
+            <time class="xp__date">2024</time>
+            <div><h3 class="xp__role">IT Support</h3><p class="xp__org">Self-employed</p><p class="xp__place">Work From home</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== LIFE HIGHLIGHTS ========== -->
+      <section class="section" id="highlights">
+        <h2 class="section__title">Life Highlights</h2>
+        <div class="featured">
+          <a href="#projects" class="featured__item featured__item--1">
+            <img src="images/jimrex-highlight1.jpg" alt="Work" onerror="this.remove()">
+            <div><strong>Work</strong><small>Linux</small></div>
+          </a>
+          <a href="#projects" class="featured__item featured__item--2">
+            <img src="images/jimrex-highlight2.jpg" alt="Training" onerror="this.remove()">
+            <div><strong>Training</strong><small>Workshop</small></div>
+          </a>
+          <a href="#projects" class="featured__item featured__item--3">
+            <img src="images/jimrex-highlight3.jpg" alt="Awards" onerror="this.remove()">
+            <div><strong>Awards</strong><small>Achievement</small></div>
+          </a>
+        </div>
+      </section>
+
+      <!-- ========== PROJECTS ========== -->
+      <section class="section" id="projects">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects">
+          <a href="#" class="project">
+            <div class="project__img project__img--1"><img src="images/jimrex-project1.jpg" alt="" onerror="this.remove()"></div>
+            <div class="project__body">
+              <ul class="tags"><li>Nmap</li><li>Wireshark</li></ul>
+              <h3>Home Network Audit</h3>
+              <p>Scanned a small home network, listed open ports and weak spots, then wrote simple fixes anyone can follow.</p>
+              <span class="project__more">View Project</span>
+            </div>
+          </a>
+          <a href="#" class="project">
+            <div class="project__img project__img--2"><img src="images/jimrex-project2.jpg" alt="" onerror="this.remove()"></div>
+            <div class="project__body">
+              <ul class="tags"><li>Python</li><li>Security</li></ul>
+              <h3>Password Strength Checker</h3>
+              <p>A tool that rates passwords and explains in plain words what makes them easy or hard to crack.</p>
+              <span class="project__more">View Project</span>
+            </div>
+          </a>
+          <a href="#" class="project">
+            <div class="project__img project__img--3"><img src="images/jimrex-project3.jpg" alt="" onerror="this.remove()"></div>
+            <div class="project__body">
+              <ul class="tags"><li>Linux</li><li>Bash</li></ul>
+              <h3>Linux Hardening Guide</h3>
+              <p>A checklist and script that locks down a fresh Linux install: updates, firewall and safe user settings.</p>
+              <span class="project__more">View Project</span>
+            </div>
+          </a>
+        </div>
+        <div class="center"><a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">See More on GitHub &rarr;</a></div>
+      </section>
+
+      <section class="section" id="certificates">
+  <h2 class="section__title">Certificates</h2>
+  <div class="certs">
+    <a href="images/jimrex-cert1.jpg" class="cert" target="_blank" rel="noopener noreferrer">
+      <div class="cert__img"><img src="images/jimrex-cert1.jpg" alt="Certificate: Cybersecurity Fundamentals" loading="lazy"></div>
+      <div><strong>Cybersecurity Fundamentals</strong><small>CyberSafe Academy · 2025</small></div>
+    </a>
+    <a href="images/jimrex-cert2.jpg" class="cert" target="_blank" rel="noopener noreferrer">
+      <div class="cert__img"><img src="images/jimrex-cert2.jpg" alt="Certificate: Network Security Essentials" loading="lazy"></div>
+      <div><strong>Network Security Essentials</strong><small>TechBridge Training · 2025</small></div>
+    </a>
+    <a href="images/jimrex-cert3.jpg" class="cert" target="_blank" rel="noopener noreferrer">
+      <div class="cert__img"><img src="images/jimrex-cert3.jpg" alt="Certificate: Linux Administration Basics" loading="lazy"></div>
+      <div><strong>Linux Administration Basics</strong><small>Open Source PH · 2026</small></div>
+    </a>
+  </div>
+</section>
+
+
+      <!-- ========== SKILLS ========== -->
+      <section class="section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <div class="chips chips--logos" aria-hidden="true"><div class="chips__group"><span><img src="images/logos/linux.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg'">Linux</span><span><img src="images/logos/python.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'">Python</span><span><img src="images/logos/bash.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg'">Bash</span><span><img src="images/logos/wireshark.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wireshark/wireshark-original.svg'">Wireshark</span><span><img src="images/logos/docker.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg'">Docker</span><span><img src="images/logos/git.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'">Git</span></div><div class="chips__group"><span><img src="images/logos/linux.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg'">Linux</span><span><img src="images/logos/python.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg'">Python</span><span><img src="images/logos/bash.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg'">Bash</span><span><img src="images/logos/wireshark.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wireshark/wireshark-original.svg'">Wireshark</span><span><img src="images/logos/docker.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg'">Docker</span><span><img src="images/logos/git.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'">Git</span></div></div>
+        <div class="chips chips--reverse" aria-hidden="true"><div class="chips__group"><span>Network Security</span><span>Risk Assessment</span><span>Threat Analysis</span><span>Encryption</span><span>Incident Response</span><span>Privacy</span></div><div class="chips__group"><span>Network Security</span><span>Risk Assessment</span><span>Threat Analysis</span><span>Encryption</span><span>Incident Response</span><span>Privacy</span></div></div>
+        <div class="chips" aria-hidden="true"><div class="chips__group"><span>Analysis</span><span>Vigilance</span><span>Teamwork</span><span>Documentation</span><span>Ethics</span><span>Learning</span></div><div class="chips__group"><span>Analysis</span><span>Vigilance</span><span>Teamwork</span><span>Documentation</span><span>Ethics</span><span>Learning</span></div></div>
+        <ul class="sr-only"><li>Linux, Python, Bash, Wireshark, Docker, Git</li><li>Network Security, Risk Assessment, Threat Analysis, Encryption, Incident Response, Privacy</li><li>Analysis, Vigilance, Teamwork, Documentation, Ethics, Learning</li></ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Jimrex Maqueda. Part of <a href="index.html">Shinanigans</a>.</p>
+    <div class="footer__links"><a href="#">GitHub</a><a href="#">Facebook</a><a href="#">Instagram</a></div>
+  </footer>
+
+  <dialog class="resume" id="resume-modal" aria-label="Resume">
+    <div class="resume__bar">
+      <strong>Resume</strong>
+      <div class="resume__actions">
+        <a href="jimrex-cv.pdf" target="_blank" rel="noopener" class="btn btn--primary">Open PDF &nearr;</a>
+        <button type="button" class="resume__close" aria-label="Close resume">&times;</button>
+      </div>
+    </div>
+    <div class="resume__body">
+      <img src="images/jimrex-resume.jpg" alt="Resume of Jimrex Maqueda">
+    </div>
+  </dialog>
+
+  <script>
+  const root = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
+  const updateLabel = () => toggle.setAttribute('aria-label',
+    root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  updateLabel();
+
+  toggle.addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    const apply = () => {
+      root.dataset.theme = next;
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      updateLabel();
+    };
+
+    // no animation support or reduced motion: just switch
+    if (!document.startViewTransition || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      apply();
+      return;
+    }
+
+    const slash = document.createElement('div');
+    slash.className = 'sword-slash';
+    document.body.appendChild(slash);
+
+    const transition = document.startViewTransition(apply);
+    transition.ready.then(() => {
+      const opts = { duration: 650, easing: 'cubic-bezier(.7,0,.2,1)' };
+
+      // the new theme is revealed behind a slanted edge
+      root.animate({
+        clipPath: [
+          'polygon(0 0, 0 0, -30% 100%, 0 100%)',
+          'polygon(0 0, 160% 0, 130% 100%, 0 100%)'
+        ]
+      }, { ...opts, pseudoElement: '::view-transition-new(root)' });
+
+      // the blade: a thin band riding that same edge
+      slash.animate({
+        clipPath: [
+          'polygon(0% 0, 0.8% 0, -29.2% 100%, -30% 100%)',
+          'polygon(160% 0, 160.8% 0, 130.8% 100%, 130% 100%)'
+        ]
+      }, opts);
+    });
+    transition.finished.then(() => slash.remove());
+  });
+  </script>
+
+  <script>
+    // pixel-block reveal on the profile photo (plays when it scrolls into view; hover swaps to a second photo)
+    (function () {
+      const avatar = document.querySelector('.avatar');
+      if (!avatar || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      const N = 10;                                   // grid size: 10 x 10 blocks
+      const grid = document.createElement('div');
+      grid.className = 'avatar__px';
+      grid.style.setProperty('--n', N);
+      for (let i = 0; i < N * N; i++) {
+        const cell = document.createElement('i');
+        if (Math.random() < 0.35) cell.className = 'dark';   // mix of white and black blocks
+        grid.appendChild(cell);
+      }
+      avatar.appendChild(grid);
+
+      const cells = Array.from(grid.children);
+      let timers = [];
+      function play() {
+        timers.forEach(clearTimeout);
+        timers = [];
+        grid.classList.add('instant');                // cover the photo again, no animation
+        cells.forEach(c => c.classList.remove('off'));
+        void grid.offsetWidth;
+        grid.classList.remove('instant');
+        cells.forEach(c => timers.push(setTimeout(() => c.classList.add('off'), 200 + Math.random() * 1000)));
+      }
+
+      new IntersectionObserver((entries, io) => {
+        if (entries[0].isIntersecting) { play(); io.disconnect(); }
+      }, { threshold: 0.4 }).observe(avatar);
+      // hover: blocks cover the photo, the picture swaps, then the blocks dissolve
+      function swap(showAlt) {
+        timers.forEach(clearTimeout);
+        timers = [];
+        cells.forEach(c => timers.push(setTimeout(() => c.classList.remove('off'), Math.random() * 350)));
+        timers.push(setTimeout(() => avatar.classList.toggle('alt', showAlt), 420));
+        cells.forEach(c => timers.push(setTimeout(() => c.classList.add('off'), 480 + Math.random() * 500)));
+      }
+      avatar.addEventListener('mouseenter', () => swap(true));
+      avatar.addEventListener('mouseleave', () => swap(false));
+    })();
+  </script>
+
+  <script>
+  // typing effect (safe: can never run twice, no jumping)
+  (function () {
+    const el = document.getElementById('typed');
+    if (!el || el.dataset.running) return;
+    el.dataset.running = '1';
+
+    const phrases = ['Cyber Security', 'Network Security', 'Risk Prevention', 'Digital Defense'];
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { el.textContent = phrases[0]; return; }
+
+    const TYPE = 90, DELETE = 45, HOLD = 1400, GAP = 350;
+    let p = 0, i = 0, deleting = false;
+
+    (function tick() {
+      const text = phrases[p];
+      i += deleting ? -1 : 1;
+      el.textContent = text.slice(0, i);
+
+      let delay = deleting ? DELETE : TYPE;
+      if (!deleting && i === text.length) { deleting = true; delay = HOLD; }
+      else if (deleting && i === 0) { deleting = false; p = (p + 1) % phrases.length; delay = GAP; }
+      setTimeout(tick, delay);
+    })();
+  })();
+  </script>
+
+  <script>
+  // resume popup: shows the resume picture, with a button that opens the PDF in a new tab
+  (function () {
+    const modal = document.getElementById('resume-modal');
+    const openBtn = document.getElementById('resume-open');
+    if (!modal || !openBtn) return;
+
+    openBtn.addEventListener('click', (e) => {
+      e.preventDefault();                 // without JS, the link still opens the PDF
+      modal.showModal();
+      document.body.style.overflow = 'hidden';
+    });
+
+    modal.querySelector('.resume__close').addEventListener('click', () => modal.close());
+    modal.addEventListener('click', (e) => { if (e.target === modal) modal.close(); });   // click outside
+    modal.addEventListener('close', () => { document.body.style.overflow = ''; });
+  })();
+  </script>
+
+</body>
+</html>

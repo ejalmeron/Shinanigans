@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shinanigans. | Portfolio</title>
+  <meta name="description" content="Portfolio of Shinanigans, a group of four developers and designers.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark'; }
+    catch (e) { document.documentElement.dataset.theme = 'dark'; }
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index-extras.css">
+  <link rel="stylesheet" href="name-meaning.css">
+  <style>@view-transition { navigation: auto; }</style>
+</head>
+<body id="top">
+
+  <!-- icon sprite: brand marks -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <linearGradient id="ig-g" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#FEDA75"/><stop offset=".35" stop-color="#FA7E1E"/>
+        <stop offset=".6" stop-color="#D62976"/><stop offset=".8" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/>
+      </linearGradient>
+      <symbol id="ico-gh" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+      <symbol id="ico-fb" viewBox="0 0 24 24"><path fill="#1877F2" d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></symbol>
+      <symbol id="ico-ig" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5.5" fill="none" stroke="url(#ig-g)" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="url(#ig-g)" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="url(#ig-g)"/></symbol>
+      <symbol id="ico-gm" viewBox="0 0 24 24"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></symbol>
+      <symbol id="ico-code" viewBox="0 0 24 24"><path d="M9.5 7L4.5 12l5 5M14.5 7l5 5-5 5" fill="none" stroke="#0A8F5F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ========== INTRO / LOADING SCREEN  ========== -->
+  <div class="intro" aria-hidden="true">
+    <div class="intro__logo">Shinanigans<span>.</span></div>
+    <div class="intro__bar"><i></i></div>
+    <p class="intro__label">Portfolio Loading</p>
+  </div>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">Shinanigans<span>.</span></a>
+
+    <input type="checkbox" id="menu-toggle" class="nav__check">
+    <label for="menu-toggle" class="nav__burger" aria-label="Toggle menu"><i></i><i></i><i></i></label>
+
+    <nav class="nav__links">
+      <a href="#team">Team</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <button type="button" class="nav__cta" popovertarget="contact-pop">Contact</button>
+    </nav>
+
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <!-- ========== WORD CAROUSEL (top) ========== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__group">
+        <span>Code</span><span>Design</span><span>Build</span><span>Play</span><span>Repeat</span>                                                                                 c x       cc   
+
+        6
+      </div>
+      <div class="ticker__group">
+        <span>Code</span><span>Design</span><span>Build</span><span>Play</span><span>Repeat</span>
+      </div>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero hero--retro" id="home">
+      <div class="hud" aria-hidden="true">
+        <span><em>1UP</em> <b>BSIT</b></span>
+        <span>HI-SCORE <b>999999</b></span>
+        <span>LIVES <b>4</b></span>
+        <span>LEVEL <b>1A</b></span>
+      </div>
+
+      <div class="hero__text">
+        <div class="ts__titlewrap">
+          <h1 class="ts__title">Shinanigans</h1>
+          <button type="button" class="qmark" popovertarget="name-pop"
+                  aria-label="What does Shinanigans mean?" title="What does Shinanigans mean?">?</button>
+        </div>
+
+        <p class="ts__line" aria-hidden="true">we
+          <span class="rot"><span class="rot__list">
+            <b>code</b><b>design</b><b>build</b><b>play</b><b>code</b>
+          </span></span>
+        </p>
+
+        <p class="hero__desc">
+          Hello! We love coding and experimenting with new ideas. To us, every line of code
+          is a way to bring something useful and cool into the digital world.
+        </p>
+
+        <div class="hero__buttons">
+          <a href="#team" class="press"><span>Press Start</span></a>
+        </div>
+
+        
+<div class="hero__connect">
+  <span>Connect</span>
+
+  <a href="https://www.instagram.com/shinanigans606?srtk=YnFjejV2M3pmZ3c%3D&utm_source=qr"
+     class="social"
+     aria-label="Instagram"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true"><use href="#ico-ig"/></svg>
+  </a>
+
+  <a href="https://github.com/shinanigans-ubuntu"
+     class="social"
+     aria-label="GitHub"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true"><use href="#ico-gh"/></svg>
+  </a>
+
+  <a href="https://www.facebook.com/profile.php?id=61595430277034&sk=about"
+     class="social"
+     aria-label="Facebook"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true"><use href="#ico-fb"/></svg>
+  </a>
+</div>
+
+      </div>
+    </section>
+
+    <!-- ========== WORD CAROUSEL (bottom, reverse) ========== -->
+    <div class="ticker ticker--bottom" aria-hidden="true">
+      <div class="ticker__group">
+        <span>Ideas</span><span>Pixels</span><span>Bugs</span><span>Coffee</span><span>Shinanigans</span>
+      </div>
+      <div class="ticker__group">
+        <span>Ideas</span><span>Pixels</span><span>Bugs</span><span>Coffee</span><span>Shinanigans</span>
+      </div>
+    </div>
+
+    <!-- ========== MINI TITLE CARD: MEET THE TEAM ========== -->
+    <section class="team" id="team">
+      <div class="team__card">
+        <p class="team__kicker"><em>1P</em> Player Select</p>
+        <h2 class="team__title">Meet the Team</h2>
+        <p class="team__sub">Four players, one squad. Pick a player to read their story.</p>
+
+        <ul class="team__grid">
+          <li><a href="#member-1" class="team__player">
+            <span class="team__badge"><img src="images/logos/photoshop.png" alt="Photoshop" data-fb="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg" onerror="var f=(this.dataset.fb||'').split(' ').filter(Boolean),n=f.shift();this.dataset.fb=f.join(' ');if(n){this.src=n}else{this.parentElement.style.display='none'}"></span>
+            <strong>Elijah</strong><small>Graphic Artist</small>
+          </a></li>
+          <li><a href="#member-2" class="team__player">
+            <span class="team__badge"><svg aria-hidden="true"><use href="#ico-code"/></svg></span>
+            <strong>King</strong><small>Programmer</small>
+          </a></li>
+          <li><a href="#member-3" class="team__player">
+            <span class="team__badge"><img src="images/logos/css.png" alt="CSS" data-fb="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" onerror="var f=(this.dataset.fb||'').split(' ').filter(Boolean),n=f.shift();this.dataset.fb=f.join(' ');if(n){this.src=n}else{this.parentElement.style.display='none'}"></span>
+            <strong>Angel</strong><small>Web Developer</small>
+          </a></li>
+          <li><a href="#member-4" class="team__player">
+            <span class="team__badge"><img src="images/logos/linux.png" alt="Linux" data-fb="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" onerror="var f=(this.dataset.fb||'').split(' ').filter(Boolean),n=f.shift();this.dataset.fb=f.join(' ');if(n){this.src=n}else{this.parentElement.style.display='none'}"></span>
+            <strong>Jimrex</strong><small>Cyber Security</small>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== MEMBER INTRO 1 (Elijah) ========== -->
+    <section class="member" id="member-1">
+      <div class="member__text">
+        <p class="member__hello">Hello, my name is</p>
+        <h2 class="member__name">Elijah<br>Almeron</h2>
+        <p class="member__role">I'm a Graphic Artist</p>
+        <p class="member__desc">
+          I specialize in creating eye-catching visuals and creative designs that communicate ideas effectively.
+          With a focus on color, typography, and visual storytelling,
+          I transform concepts into impactful designs that capture attention and bring brands to life.
+        </p>
+
+        <div class="member__buttons">
+          <a href="elijah.html" class="btn btn--primary">View My Work &rarr;</a>
+          <button type="button" class="btn btn--ghost" popovertarget="cp-elijah" style="anchor-name: --cp-elijah">Contact Me</button>
+        </div>
+      </div>
+
+      <a href="elijah.html" class="member__photo" aria-label="Open Elijah's portfolio">
+        <img src="images/member1.jpg" alt="Elijah Almeron">
+        <span class="member__badge" title="Photoshop"><img src="images/logos/photoshop.png" alt="Photoshop" data-fb="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-plain.svg" onerror="var f=(this.dataset.fb||'').split(' ').filter(Boolean),n=f.shift();this.dataset.fb=f.join(' ');if(n){this.src=n}else{this.parentElement.style.display='none'}"></span>
+      </a>
+    </section>
+
+    <!-- ========== MEMBER INTRO 2 (King) ========== -->
+    <section class="member" id="member-2">
+      <div class="member__text">
+        <p class="member__hello">Hello, my name is</p>
+        <h2 class="member__name">King<br>Palo</h2>
+        <p class="member__role">I'm a Programmer</p>
+        <p class="member__desc">
+          I specialize in writing clean, efficient, and reliable code to bring ideas to life. With a focus on
+          problem-solving, logical thinking, and functionality, I build digital solutions that are practical, innovative, and user-friendly.
+        </p>
+
+        <div class="member__buttons">
+          <a href="king.html" class="btn btn--primary">View My Work &rarr;</a>
+          <button type="button" class="btn btn--ghost" popovertarget="cp-king" style="anchor-name: --cp-king">Contact Me</button>
+        </div>
+      </div>
+
+      <a href="king.html" class="member__photo" aria-label="Open King's portfolio">
+        <img src="images/member2.jpg" alt="King Palo">
+        <span class="member__badge" title="Code"><svg aria-hidden="true"><use href="#ico-code"/></svg></span>
+      </a>
+    </section>
+
+    <!-- ========== MEMBER INTRO 3 (Angel) ========== -->
+    <section class="member" id="member-3">
+      <div class="member__text">
+        <p class="member__hello">Hello, my name is</p>
+        <h2 class="member__name">Angel<br>Catbagan</h2>
+        <p class="member__role">I'm a Web Developer</p>
+        <p class="member__desc">
+          I specialize in creating modern, responsive, and visually appealing websites that deliver seamless user experiences.
+          With a focus on clean layouts,
+          intuitive navigation, and functional design, I turn creative ideas into engaging digital experiences.
+        </p>
+
+        <div class="member__buttons">
+          <a href="angel.html" class="btn btn--primary">View My Work &rarr;</a>
+          <button type="button" class="btn btn--ghost" popovertarget="cp-angel" style="anchor-name: --cp-angel">Contact Me</button>
+        </div>
+      </div>
+
+      <a href="angel.html" class="member__photo" aria-label="Open Angel's portfolio">
+        <img src="images/member3.jpg" alt="Angel Catbagan">
+        <span class="member__badge" title="CSS"><img src="images/logos/css.png" alt="CSS" data-fb="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" onerror="var f=(this.dataset.fb||'').split(' ').filter(Boolean),n=f.shift();this.dataset.fb=f.join(' ');if(n){this.src=n}else{this.parentElement.style.display='none'}"></span>
+      </a>
+    </section>
+
+    <!-- ========== MEMBER INTRO 4 (Jimrex) ========== -->
+    <section class="member" id="member-4">
+      <div class="member__text">
+        <p class="member__hello">Hello, my name is</p>
+        <h2 class="member__name">Jimrex<br>Maqueda</h2>
+        <p class="member__role">I'm a Cyber Security</p>
+        <p class="member__desc">
+          I specialize in protecting digital systems, securing sensitive data, and identifying potential security threats.
+          With a focus on privacy,
+          risk prevention, and network security, I help build safer and more reliable digital environments.
+        </p>
+
+        <div class="member__buttons">
+          <a href="jimrex.html" class="btn btn--primary">View My Work &rarr;</a>
+          <button type="button" class="btn btn--ghost" popovertarget="cp-jimrex" style="anchor-name: --cp-jimrex">Contact Me</button>
+        </div>
+      </div>
+
+      <a href="jimrex.html" class="member__photo" aria-label="Open Jimrex's portfolio">
+        <img src="images/member4.jpg" alt="Jimrex Maqueda">
+        <span class="member__badge" title="Linux"><img src="images/logos/linux.png" alt="Linux" data-fb="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" onerror="var f=(this.dataset.fb||'').split(' ').filter(Boolean),n=f.shift();this.dataset.fb=f.join(' ');if(n){this.src=n}else{this.parentElement.style.display='none'}"></span>
+      </a>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <p class="section__eyebrow">Discover</p>
+      <h2 class="section__title">About us</h2>
+
+      <div class="about">
+        <div class="about__badge">DEV.</div>
+
+        <div class="about__cols">
+          <article class="card">
+            <h3>Who we are</h3>
+            <p>We are a team of four passionate individuals with different skills and creative ideas.
+              Our team combines web design, graphic design, and coding to create digital projects that
+              are visually appealing, functional, and meaningful.</p>
+          </article>
+
+          <article class="card">
+            <h3>Our Approach</h3>
+            <p>We believe that great projects come from teamwork, creativity, and collaboration. By combining our different
+              skills and sharing ideas,
+              we aim to create designs and digital solutions that are simple, user-friendly, and effective.</p>
+          </article>
+
+          <article class="card card--details">
+            <h3>Our goal</h3>
+            <p>Our goal is to showcase our talents, improve our skills, and turn our ideas into reality through technology and creativity.
+              Together, we strive to create quality projects that reflect our passion, teamwork, and dedication.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Hello I'm Elijah</span><span>Hello I'm Angel</span><span>Hello I'm King</span><span>Hello I'm Jimrex</span>
+        <span>Hello I'm Elijah</span><span>Hello I'm Angel</span><span>Hello I'm King</span><span>Hello I'm Jimrex</span>
+      </div>
+    </div>
+    <div class="marquee marquee--reverse" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Web Developer</span><span>APP Developer</span><span>Fullstack Developer</span><span>Graphic Artist</span>
+        <span>Web Developer</span><span>APP Developer</span><span>Fullstack Developer</span><span>Graphic Artist</span>
+      </div>
+    </div>
+
+    <!-- ========== SKILLS ========== -->
+    <section class="section" id="skills">
+      <p class="section__eyebrow">Skills &amp; Tools</p>
+      <h2 class="section__title">Our Tech Stack</h2>
+
+      <div class="stack">
+        <article class="stack__group">
+          <h3>Frontend</h3>
+          <p>Frameworks and libraries for interactive interfaces.</p>
+          <ul>
+            <li><b class="logo"><img src="images/logos/react.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'"></b>React.js</li>
+            <li><b class="logo"><img src="images/logos/nextjs.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg'"></b>Next.js</li>
+            <li><b class="logo"><img src="images/logos/tailwind.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'"></b>Tailwind CSS</li>
+            <li><b class="logo"><img src="images/logos/html.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg'"></b>HTML5</li>
+            <li><b class="logo"><img src="images/logos/css.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg'"></b>CSS3</li>
+          </ul>
+        </article>
+
+        <article class="stack__group">
+          <h3>Backend</h3>
+          <p>Server-side technologies and frameworks.</p>
+          <ul>
+            <li><b class="logo"><img src="images/logos/nodejs.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg'"></b>Node.js</li>
+            <li><b class="logo"><img src="images/logos/express.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg'"></b>Express.js</li>
+            <li><b class="logo"><img src="images/logos/go.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg'"></b>Go (Golang)</li>
+            <li><b class="logo"><img src="images/logos/laravel.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg'"></b>Laravel</li>
+          </ul>
+        </article>
+
+        <article class="stack__group">
+          <h3>Databases &amp; ORM</h3>
+          <p>Database systems and object-relational mappers.</p>
+          <ul>
+            <li><b class="logo"><img src="images/logos/mysql.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg'"></b>MySQL</li>
+            <li><b class="logo"><img src="images/logos/postgresql.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg'"></b>PostgreSQL</li>
+            <li><b class="logo"><img src="images/logos/mongodb.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg'"></b>MongoDB</li>
+            <li><b class="logo"><img src="images/logos/prisma.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg'"></b>Prisma ORM</li>
+          </ul>
+        </article>
+
+        <article class="stack__group">
+          <h3>Tools &amp; Infrastructure</h3>
+          <p>Version control, tooling and deployment.</p>
+          <ul>
+            <li><b class="logo"><img src="images/logos/git.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'"></b>Git</li>
+            <li><b class="logo"><img src="images/logos/github.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg'"></b>GitHub</li>
+            <li><b class="logo"><img src="images/logos/docker.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg'"></b>Docker</li>
+            <li><b class="logo"><img src="images/logos/linux.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg'"></b>Linux</li>
+            <li><b class="logo"><img src="images/logos/nginx.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg'"></b>Nginx</li>
+            <li><b class="logo"><img src="images/logos/postman.png" alt="" loading="lazy" onerror="this.onerror=function(){this.style.display='none'};this.src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg'"></b>Postman</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== BACK TO START ========== -->
+    <div class="to-top">
+      <a href="#top" class="press"><span>Back to Start</span></a>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER (also the Contact target) ========== -->
+  <footer class="footer" id="contact">
+    <p>&copy; 2026 Shinanigans. All rights reserved.</p>
+    <p>Built with HTML &amp; CSS</p>
+    <div class="footer__links">
+      <a href="#">GitHub</a><a href="#">Facebook</a><a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <!-- ========== WHAT DOES "SHINANIGANS" MEAN? ========== -->
+  <div id="name-pop" class="name-pop" popover>
+    <button type="button" class="name-pop__close" popovertarget="name-pop" popovertargetaction="hide" aria-label="Close">&times;</button>
+    <p class="name-pop__kicker">Dictionary.exe</p>
+    <h2 class="name-pop__word">Shinanigans</h2>
+    <p class="name-pop__say"><em>/shin-AN-i-gunz/</em> &middot; noun</p>
+    <p class="name-pop__def">Playful mischief, but make it code.</p>
+    <p class="name-pop__text">
+      Our name is a twist on <em>&ldquo;shenanigans&rdquo;</em>: harmless fun, clever tricks and a little
+      chaos. We swapped in an <strong>i</strong> for <strong>ideas</strong>, because every project we build
+      starts as a silly idea that somehow ends up working.
+    </p>
+    <p class="name-pop__text">
+      Four students, four skills (design, code, web and security), one squad turning a little chaos into real projects.
+    </p>
+
+    <p class="name-pop__sub">Letter by letter</p>
+    <ol class="name-pop__letters">
+      <li><b>S</b> Strange ideas</li>
+      <li><b>H</b> Hands-on learning</li>
+      <li><b>I</b> Imagination</li>
+      <li><b>N</b> Never-ending experiments</li>
+      <li><b>A</b> Always collaborating</li>
+      <li><b>N</b> New skills unlocked</li>
+      <li><b>I</b> Ideas into reality</li>
+      <li><b>G</b> Great teamwork</li>
+      <li><b>A</b> Awesome designs</li>
+      <li><b>N</b> No bug left behind</li>
+      <li><b>S</b> Shared passion</li>
+    </ol>
+  </div>
+
+  <!-- Elijah's contacts (opens beside Elijah's Contact Me button) -->
+  <div id="cp-elijah" class="contact-pop cp" popover style="position-anchor: --cp-elijah">
+    <button type="button" class="name-pop__close" popovertarget="cp-elijah" popovertargetaction="hide" aria-label="Close">&times;</button>
+    <p class="contact-pop__title">Contact Elijah</p>
+    <ul>
+      <li><a href="https://www.facebook.com/ej.almeron.3" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-fb"/></svg>
+        <span><strong>Facebook</strong><small>facebook.com/ej.mcflurry</small></span></a></li>
+      <li><a href="https://www.instagram.com/ej.mcflurry/" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-ig"/></svg>
+        <span><strong>Instagram</strong><small>@elijah.yourname</small></span></a></li>
+
+<li>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=almeronelijah@gmail.com"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true">
+      <use href="#ico-gm"/>
+    </svg>
+    <span>
+      <strong>Gmail</strong>
+      <small>almeronelijah@gmail.com</small>
+    </span>
+  </a>
+</li>
+</ul>
+</div>
+
+
+
+  <!-- King's contacts (opens beside King's Contact Me button) -->
+  <div id="cp-king" class="contact-pop cp" popover style="position-anchor: --cp-king">
+    <button type="button" class="name-pop__close" popovertarget="cp-king" popovertargetaction="hide" aria-label="Close">&times;</button>
+    <p class="contact-pop__title">Contact King</p>
+    <ul>
+      <li><a href="https://www.facebook.com/PaloKing123" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-fb"/></svg>
+        <span><strong>Facebook</strong><small>facebook.com/PaloKing123</small></span></a></li>
+      <li><a href="https://www.instagram.com/yourking2885/" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-ig"/></svg>
+        <span><strong>Instagram</strong><small>@yourking2885</small></span></a></li>
+      <li>
+        
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kingpalo082988@gmail.com"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true">
+      <use href="#ico-gm"/>
+    </svg>
+    <span>
+      <strong>Gmail</strong>
+      <small>kingpalo082988@gmail.com
+</small>
+    </span>
+  </a>
+</li>
+</ul>
+</div>
+
+  <!-- Angel's contacts (opens beside Angel's Contact Me button) -->
+  <div id="cp-angel" class="contact-pop cp" popover style="position-anchor: --cp-angel">
+    <button type="button" class="name-pop__close" popovertarget="cp-angel" popovertargetaction="hide" aria-label="Close">&times;</button>
+    <p class="contact-pop__title">Contact Angel</p>
+    <ul>
+      <li><a href="Fb: https://www.facebook.com/agelliecc" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-fb"/></svg>
+        <span><strong>Facebook</strong><small>facebook.com/agelliecc</small></span></a></li>
+      <li><a href="https://www.instagram.com/gelleeeyyy?obrf=anM3NHN3bGVpY3Nm" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-ig"/></svg>
+        <span><strong>Instagram</strong><small>@gelleeeyyy</small></span></a></li>
+     
+        <li><a href="angelcatbagan4@gmail.com ">
+        <svg aria-hidden="true"><use href="#ico-gm"/></svg>
+        <span><strong>Gmail</strong><small>angelcatbagan4@gmail.com </small></span></a></li>
+    </ul>
+  </div>
+
+  <!-- Jimrex's contacts (opens beside Jimrex's Contact Me button) -->
+  <div id="cp-jimrex" class="contact-pop cp" popover style="position-anchor: --cp-jimrex">
+    <button type="button" class="name-pop__close" popovertarget="cp-jimrex" popovertargetaction="hide" aria-label="Close">&times;</button>
+    <p class="contact-pop__title">Contact Jimrex</p>
+    <ul>
+      <li><a href="https://www.facebook.com/jimrex.maqueda" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-fb"/></svg>
+        <span><strong>Facebook</strong><small>facebook.com/jimrex.maqueda</small></span></a></li>
+      <li><a href="https://www.instagram.com/jmr_exe/" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-ig"/></svg>
+        <span><strong>Instagram</strong><small>@jmr_exe</small></span></a></li>
+      <li>
+  
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jimrexmaqueda@gmail.com"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true">
+      <use href="#ico-gm"/>
+    </svg>
+    <span>
+      <strong>Gmail</strong>
+      <small>jimrexmaqueda@gmail.com</small>
+    </span>
+  </a>
+</li>
+</ul>
+</div>
+
+  <!-- ========== CONTACT WIDGET (opens from the Contact buttons) ========== -->
+  <div id="contact-pop" class="contact-pop" popover>
+    <button type="button" class="name-pop__close" popovertarget="contact-pop" popovertargetaction="hide" aria-label="Close">&times;</button>
+    <p class="contact-pop__title">Contact us</p>
+    <ul>
+      <li>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Shinanigansteam@gmail.com"
+     target="_blank"
+     rel="noopener noreferrer">
+    <svg aria-hidden="true">
+      <use href="#ico-gm"/>
+    </svg>
+    <span>
+      <strong>Gmail</strong>
+      <small>Shinanigansteam@gmail.com</small>
+    </span>
+  </a>
+</li>
+
+      <li><a href="https://www.facebook.com/profile.php?id=61595430277034&sk=about" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-fb"/></svg>
+        <span><strong>Facebook</strong><small>facebook.com/Shinanigans</small></span></a></li>
+      <li><a href="https://www.instagram.com/shinanigans606?srtk=YnFjejV2M3pmZ3c%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+        <svg aria-hidden="true"><use href="#ico-ig"/></svg>
+        <span><strong>Instagram</strong><small>@shinanigans606</small></span></a></li>
+    </ul>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById('theme-toggle');
+    const updateLabel = () => toggle.setAttribute('aria-label',
+      root.dataset.theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    updateLabel();
+    toggle.addEventListener('click', () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      const apply = () => {
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        updateLabel();
+      };
+      const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      // sword-slash wipe where supported, instant switch everywhere else
+      if (!document.startViewTransition || reduce) { apply(); return; }
+      document.startViewTransition(apply);
+    });
+  </script>
+
+</body>
+</html>
